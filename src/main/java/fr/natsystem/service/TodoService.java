@@ -34,7 +34,7 @@ public class TodoService {
        return entityManager.find(Todo.class, id);
     }
     
-     public List<Todo> getTodos(Long id){
+     public List<Todo> getTodos(){
        return entityManager.createQuery("SELECT t from Todo t", Todo.class).getResultList();
     }
     
